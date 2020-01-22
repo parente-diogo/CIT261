@@ -8,9 +8,39 @@
   <title>CIT 261 | Assignment 5</title>  
   <link rel="stylesheet" href="../main/styles/normalize.css">
   <link rel="stylesheet" href="styles/style.css">
+  <script src="function/Storage.js"></script>
 </head>
 
 <body>
+  <p>Sources: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API" target="_blank">developer.mozilla</a>
+  <a href="https://www.w3schools.com/html/html5_webstorage.asp" target="_blank">W3Schools</a></p>
+<h2>API</h2>
+<p><b>A</b>pplication <b>P</b>rogramming <b>I</b>nterface</p>
+<p>It is an intermediary application that links a main service to an user.<br>The user can be another service, website, machine.</p>
+<p><b>Example:</b> Google Maps is the main service of maps and localization from Google. The user can be a website of a company located anywhere in the World. The API that access information from Google Maps can be installed in this company site to show its real location. The company website does not have any map, but it can show the map because the API links it to the main Map Service.</p>
+<a href="https://canaltech.com.br/software/o-que-e-api/" target="_blank">What is an API</a>
+
+<h2>Web Storage</h2>
+<h3>Session Storage</h3>
+<p>Stores data until the session is closed. When you close the tab or the browser the information is erased.</p>
+<h3>Local Storage</h3>
+<p>Maintains the information even after closing the browser, there is no expiration date. To erase the information you need to clean the browser cache</p>
+
+<h2>HTML Web Storage Objects</h2>
+<h3>Check Storage Support</h3>
+<button type="button" onclick="support()">Check support</button>
+
+<h3>Local Storage Object</h3>
+<button type="button" onclick="storeLocal()">Local Storage</button>
+<button type="button" onclick="recoverLocal()">Get Local Storage</button>
+<button type="button" onclick="eraseLocal()">Remove Local Storage</button>
+<button type="button" onclick="clearLocal()">Clear</button>
+
+<h3>Session Storage Object</h3>
+<button type="button" onclick="storeSession()">Session Storage</button>
+<button type="button" onclick="recoverSession()">Get Session Storage</button>
+<button type="button" onclick="eraseSession()">Remove Session Storage</button>
+<button type="button" onclick="clearSession()">Clear</button>
 
 </body>
 </html>
