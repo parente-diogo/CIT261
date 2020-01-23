@@ -5,42 +5,93 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Local Storage">
-  <title>CIT 261 | Assignment 5</title>  
+  <title>CIT 261 | Assignment 5</title>
   <link rel="stylesheet" href="../main/styles/normalize.css">
   <link rel="stylesheet" href="styles/style.css">
   <script src="function/Storage.js"></script>
 </head>
 
 <body>
-  <p>Sources: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API" target="_blank">developer.mozilla</a>
-  <a href="https://www.w3schools.com/html/html5_webstorage.asp" target="_blank">W3Schools</a></p>
-<h2>API</h2>
-<p><b>A</b>pplication <b>P</b>rogramming <b>I</b>nterface</p>
-<p>It is an intermediary application that links a main service to an user.<br>The user can be another service, website, machine.</p>
-<p><b>Example:</b> Google Maps is the main service of maps and localization from Google. The user can be a website of a company located anywhere in the World. The API that access information from Google Maps can be installed in this company site to show its real location. The company website does not have any map, but it can show the map because the API links it to the main Map Service.</p>
-<a href="https://canaltech.com.br/software/o-que-e-api/" target="_blank">What is an API</a>
+  <p>Sources: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API"
+      target="_blank">developer.mozilla</a>
+    <a href="https://www.w3schools.com/html/html5_webstorage.asp" target="_blank">W3 Schools</a>
+    <a href="http://www.w3playground.com/localStorageStoringArrays.html" target="_blank">W3 Playground.com</a>
+    <a href="http://hodgesinvestmentsinc.com/assessments/topic4/index.php" target="_blank">Hodges Investments
+      Inc.com</a>
+    <a href="https://www.kirupa.com/html5/storing_and_retrieving_an_array_from_local_storage.htm"
+      target="_blank">Kirupa.com</a>
+    <a href="https://www.oreilly.com/library/view/programming-php-3rd/9781449361068/ch05s01.html"
+      target="_blank">O'Reilly.com</a>
 
-<h2>Web Storage</h2>
-<h3>Session Storage</h3>
-<p>Stores data until the session is closed. When you close the tab or the browser the information is erased.</p>
-<h3>Local Storage</h3>
-<p>Maintains the information even after closing the browser, there is no expiration date. To erase the information you need to clean the browser cache</p>
+  </p>
 
-<h2>HTML Web Storage Objects</h2>
-<h3>Check Storage Support</h3>
-<button type="button" onclick="support()">Check support</button>
+  <h2>API</h2>
+  <p><b>A</b>pplication <b>P</b>rogramming <b>I</b>nterface</p>
+  <p>It is an intermediary application that links a main service to an user.<br>The user can be another service,
+    website, machine.</p>
+  <p><b>Example:</b> Google Maps is the main service of maps and localization from Google. The user can be a website of
+    a company located anywhere in the World. The API that access information from Google Maps can be installed in this
+    company site to show its real location. The company website does not have any map, but it can show the map because
+    the API links it to the main Map Service.</p>
 
-<h3>Local Storage Object</h3>
-<button type="button" onclick="storeLocal()">Local Storage</button>
-<button type="button" onclick="recoverLocal()">Get Local Storage</button>
-<button type="button" onclick="eraseLocal()">Remove Local Storage</button>
-<button type="button" onclick="clearLocal()">Clear</button>
+  <h2>Cookies Storage</h2>
+  <p>The ancient browsers and versions of browsers used only cookies tostore data.</p>
+  <p>One cookie can store up to 4 Kb of data.</p>
+  <p>Each page had a limit of 30 to 50 cookies.</p>
 
-<h3>Session Storage Object</h3>
-<button type="button" onclick="storeSession()">Session Storage</button>
-<button type="button" onclick="recoverSession()">Get Session Storage</button>
-<button type="button" onclick="eraseSession()">Remove Session Storage</button>
-<button type="button" onclick="clearSession()">Clear</button>
+  <h2>Web Storage</h2</h2>> <h3>Session Storage</h3>
+    <p>Stores data <b>until the session is closed</b>. When you close the tab or the browser the information is erased.
+    </p>
+    <p>The Session Storage can store up to 5 Mb.</p>
+    <h3>Local Storage</h3>
+    <p>Maintains the information even after closing the browser, there is no expiration date. To erase the information
+      you need to clean the browser cache.</p>
+    <p>The Local Storage has no limit. It depends on your computer.</p>
+
+    <h2>Security</h2>
+    <p>We must not store sensitive information:</p>
+    <ul>
+      <li>Username</li>
+      <li>Password</li>
+      <li>Credit card number</li>
+    </ul>
+
+    <h2>HTML Web Storage Objects</h2>
+    <h3>Check Storage Support</h3>
+    <button type="button" onclick="support()">Check support</button>
+
+    <h3>Local Storage Object</h3>
+    <button type="button" onclick="storeLocal()">Local Storage</button>
+    <button type="button" onclick="recoverLocal()">Get Local Storage</button>
+    <button type="button" onclick="eraseLocal()">Remove Local Storage</button>
+    <button type="button" onclick="clearLocal()">Clear</button>
+
+    <h3>Session Storage Object</h3>
+    <button type="button" onclick="storeSession()">Session Storage</button>
+    <button type="button" onclick="recoverSession()">Get Session Storage</button>
+    <button type="button" onclick="eraseSession()">Remove Session Storage</button>
+    <button type="button" onclick="clearSession()">Clear</button>
+
+    <h2>Arrays</h2>
+    <h3>Indexed Arrays</h3>
+    <p>The values in an Indexed arrays are indexed using integers, starting in 0 (zero). It is like a one-column table.
+    </p>
+    <p>Array = ["first", "second", "third"]</p>
+    <h3>Associative Arrays</h3>
+    <p>The values in an Associative arrays are indexed using keys, starting in 0 (zero). It is like a two-column table;
+      the key is in the first column and the value is in the second.</p>
+    <p>Array = {"month":"January","day":"23","weekday":"Thursday","year":"2020"}</p>
+
+    <p>Only strings can be stored in Local and Session Storages.</p>
+    <p>Arrays must be converted to strings in order to be stored. The command to convert an array to string is
+      <b>JSON.stringify()</b>.</p>
+    <button type="button" onclick="storeArray()">Store array</button>
+    <button type="button" onclick="storeArray2()">Convert and store array</button>
+
+    <p>To retrieve an string and convert it back to an array, we must use the command <b>JSON.parse()</b>.</p>
+    <button type="button" onclick="getArray()">Recover array</button>
+    <button type="button" onclick="getArray2()">Recover and convert array</button>
 
 </body>
+
 </html>
