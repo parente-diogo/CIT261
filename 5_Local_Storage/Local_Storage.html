@@ -39,58 +39,59 @@
   <p>One cookie can store up to 4 Kb of data.</p>
   <p>Each page had a limit of 30 to 50 cookies.</p>
 
-  <h2>Web Storage</h2</h2>> <h3>Session Storage</h3>
-    <p>Stores data <b>until the session is closed</b>. When you close the tab or the browser the information is erased.
-    </p>
-    <p>The Session Storage can store up to 5 Mb.</p>
-    <h3>Local Storage</h3>
-    <p>Maintains the information even after closing the browser, there is no expiration date. To erase the information
-      you need to clean the browser cache.</p>
-    <p>The Local Storage has no limit. It depends on your computer.</p>
+  <h2>Web Storage</h2>
+  <h3>Session Storage</h3>
+  <p>Stores data <b>until the session is closed</b>. When you close the tab or the browser the information is erased.
+  </p>
+  <p>The Session Storage can store up to 5 Mb.</p>
+  <h3>Local Storage</h3>
+  <p>Maintains the information even after closing the browser, there is no expiration date. To erase the information
+    you need to clean the browser cache.</p>
+  <p>The Local Storage has no limit. It depends on your computer.</p>
 
-    <h2>Security</h2>
-    <p>We must not store sensitive information:</p>
-    <ul>
-      <li>Username</li>
-      <li>Password</li>
-      <li>Credit card number</li>
-    </ul>
+  <h2>Security</h2>
+  <p>We must not store sensitive information:</p>
+  <ul>
+    <li>Username</li>
+    <li>Password</li>
+    <li>Credit card number</li>
+  </ul>
 
-    <h2>HTML Web Storage Objects</h2>
-    <h3>Check Storage Support</h3>
-    <button type="button" onclick="support()">Check support</button>
+  <h2>HTML Web Storage Objects</h2>
+  <h3>Check Storage Support</h3>
+  <button type="button" onclick="support()">Check support</button>
 
-    <h3>Local Storage Object</h3>
-    <button type="button" onclick="storeLocal()">Local Storage</button>
-    <button type="button" onclick="recoverLocal()">Get Local Storage</button>
-    <button type="button" onclick="eraseLocal()">Remove Local Storage</button>
-    <button type="button" onclick="clearLocal()">Clear</button>
+  <h3>Local Storage Object</h3>
+  <button type="button" onclick="storeLocal()">Local Storage</button>
+  <button type="button" onclick="recoverLocal()">Get Local Storage</button>
+  <button type="button" onclick="eraseLocal()">Remove Local Storage</button>
+  <button type="button" onclick="clearLocal()">Clear</button>
 
-    <h3>Session Storage Object</h3>
-    <button type="button" onclick="storeSession()">Session Storage</button>
-    <button type="button" onclick="recoverSession()">Get Session Storage</button>
-    <button type="button" onclick="eraseSession()">Remove Session Storage</button>
-    <button type="button" onclick="clearSession()">Clear</button>
+  <h3>Session Storage Object</h3>
+  <button type="button" onclick="storeSession()">Session Storage</button>
+  <button type="button" onclick="recoverSession()">Get Session Storage</button>
+  <button type="button" onclick="eraseSession()">Remove Session Storage</button>
+  <button type="button" onclick="clearSession()">Clear</button>
 
-    <h2>Arrays</h2>
-    <h3>Indexed Arrays</h3>
-    <p>The values in an Indexed arrays are indexed using integers, starting in 0 (zero). It is like a one-column table.
-    </p>
-    <p>Array = ["first", "second", "third"]</p>
-    <h3>Associative Arrays</h3>
-    <p>The values in an Associative arrays are indexed using keys, starting in 0 (zero). It is like a two-column table;
-      the key is in the first column and the value is in the second.</p>
-    <p>Array = {"month":"January","day":"23","weekday":"Thursday","year":"2020"}</p>
+  <h2>Arrays</h2>
+  <h3>Indexed Arrays</h3>
+  <p>The values in an Indexed arrays are indexed using integers, starting in 0 (zero). It is like a one-column table.
+  </p>
+  <p>Array = ["first", "second", "third"]</p>
+  <h3>Associative Arrays</h3>
+  <p>The values in an Associative arrays are indexed using keys, starting in 0 (zero). It is like a two-column table;
+    the key is in the first column and the value is in the second.</p>
+  <p>Array = {"month":"January","day":"23","weekday":"Thursday","year":"2020"}</p>
 
-    <p>Only strings can be stored in Local and Session Storages.</p>
-    <p>Arrays must be converted to strings in order to be stored. The command to convert an array to string is
-      <b>JSON.stringify()</b>.</p>
-    <button type="button" onclick="storeArray()">Store array</button>
-    <button type="button" onclick="storeArray2()">Convert and store array</button>
+  <p>Only strings can be stored in Local and Session Storages.</p>
+  <p>Arrays must be converted to strings in order to be stored. The command to convert an array to string is
+    <b>JSON.stringify()</b>.</p>
+  <button type="button" onclick="storeArray()">Store array</button>
+  <button type="button" onclick="storeArray2()">Convert and store array</button>
 
-    <p>To retrieve an string and convert it back to an array, we must use the command <b>JSON.parse()</b>.</p>
-    <button type="button" onclick="getArray()">Recover array</button>
-    <button type="button" onclick="getArray2()">Recover and convert array</button>
+  <p>To retrieve an string and convert it back to an array, we must use the command <b>JSON.parse()</b>.</p>
+  <button type="button" onclick="getArray()">Recover array</button>
+  <button type="button" onclick="getArray2()">Recover and convert array</button>
 
 </body>
 
