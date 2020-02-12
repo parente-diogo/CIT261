@@ -10,14 +10,17 @@
   <link rel="stylesheet" href="../main/styles/normalize.css">
   <link rel="stylesheet" href="../main/styles/main.css">
   <link rel="stylesheet" href="styles/style.css">
+  <script src="function/DOM.js"></script>
 </head>
 
 <body>
   <h6>DOM - Manipulation Using createElement, appendChild, insertBefore, removeChild, etc.</h6>
-  <p>Sources: <a href="https://www.w3schools.com/js/js_htmldom.asp" target="_blank">W3 Schools</a>
-    <a href="#" target="_blank"></a>
-    <a href="#" target="_blank"></a>
-    <a href="#" target="_blank"></a>
+  <p>Sources: <a href="https://www.w3schools.com/js/js_htmldom.asp" target="_blank">W3 Schools: DOM</a><br>
+    <a href="https://www.w3schools.com/jsref/met_document_createelement.asp" target="_blank">W3 Schools: Create Element</a><br>
+    <a href="https://www.w3schools.com/jsref/met_node_appendchild.asp" target="_blank">W3 Schools: Append Child</a><br>
+    <a href="https://www.w3schools.com/jsref/met_node_insertbefore.asp" target="_blank">W3 Schools: Insert Before</a><br>
+    <a href="https://www.w3schools.com/jsref/met_node_removechild.asp" target="_blank">W3 Schools: Remove Child</a><br>
+    <a href="https://www.w3schools.com/jsref/met_node_replacechild.asp" target="_blank">W3 Schools: Replace Child</a><br>
     <a href="#" target="_blank"></a>
 </p>
 
@@ -28,27 +31,56 @@
 <p>DOM stands for <b>D</b>ocument <b>O</b>bject <b>M</b>odel.<br>It is a tree containing every object in the page, connected according to the relationship to other elements, descendants, siblings, or whatever relation they have.<br>The browser creates <b>one DOM for each page</b> loaded.</p>
 <p>Example:<br>
 <a href="example.html" target="_blank"><img src="images/HTML_tree.gif" alt="HTML tree"></a></p>
-<p>Knowing the DOM for a webpage is possible to change its HTML in the JavaScript code.</p>
-
-<h2>Finding HTML elements</h2>
-<p>document.getElementById()</p>
-<p>document.getElementsByTagName()</p>
-<p>document.getElementsByClassName()</p>
-<p>document.querySelectorAll()</p>
-<a href="https://www.w3schools.com/js/js_htmldom_elements.asp" target="_blank">W3 Schools</a>
-
+<p>Knowing the DOM for a webpage makes it possible to change its HTML in the JavaScript code.</p>
 
 <h2>Changing the HTML</h2>
-<p>document.createElement</p>
-<p>document.appendChild</p>
-<p>document.removeChild</p>
-<p>document.replaceChild</p>
-<p>document.write</p>
+<p><b>document.createElement()</b><br>Creates a new element and stores in a variable.</p>
+<p><b>document.appendChild</b><br>Insert/add the element to the HTML structure.</p>
+<button onclick="buttonCreate()">Create a button</button><br>
+<input type="text" id="inputBox"><button type="button" onclick="textCreate()">Create text</button>
+<div id="space1"></div>
 
 
+<p><b>document.removeChild</b><br></p>
+<p><b>document.replaceChild</b><br></p>
+<p><b>document.write</b><br></p>
 
 
+<h2>Finding HTML elements</h2>
+<a href="https://www.w3schools.com/js/js_htmldom_elements.asp" target="_blank">W3 Schools: Elements</a>
+<p>document.getElementById()<br>
+document.getElementsByTagName()<br>
+document.getElementsByClassName()<br>
+document.querySelectorAll()</p>
 
+
+<h2>Finding HTML objects</h2>
+<a href="https://www.w3schools.com/js/js_htmldom_document.asp" target="_blank">W3 Schools: Objects</a>
+<p>document.anchors<br>
+  document.applets<br>
+  document.baseURI<br>
+  document.body<br>
+  document.cookie<br>
+  document.doctype<br>
+  document.documentElement<br>
+  document.documentMode<br>
+  document.documentURI<br>
+  document.domain<br>
+  document.domConfig<br>
+  document.embeds<br>
+  document.forms<br>
+  document.head<br>
+  document.images<br>
+  document.implementation<br>
+  document.inputEncoding<br>
+  document.lastModified<br>
+  document.links<br>
+  document.readyState<br>
+  document.referrer<br>
+  document.scripts<br>
+  document.strictErrorChecking<br>
+  document.title<br>
+  document.URL</p>
 
 </body>
 </html>
