@@ -30,7 +30,7 @@ function textRemove() {
   var space = document.getElementById("space2");
   space.removeChild(space.childNodes[removePlace]);
 }
-
+/*
 // REPLACE ------------------------------------------- //
 function textReplace() {
   var inputText3 = document.getElementById("inputBox3").value;
@@ -38,4 +38,4 @@ function textReplace() {
 
   var repPar = document.getElementById("space2").childNodes[inputReplace];
   repPar.replaceChild(inputText3, repPar.childNodes[inputReplace]);
-}
+}*/
