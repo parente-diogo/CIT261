@@ -4,5 +4,6 @@ body {
 
 h6 {
   position: fixed;
-  margin: -10px;
+  bottom: -20px;
+  right: 10px;
 }

@@ -35,16 +35,24 @@
 
 <h2>Changing the HTML</h2>
 <p><b>document.createElement()</b><br>Creates a new element and stores in a variable.</p>
-<p><b>document.appendChild</b><br>Insert/add the element to the HTML structure.</p>
+<p><b>document.appendChild()</b><br>Insert/add the element to the HTML structure.</p>
 <button onclick="buttonCreate()">Create a button</button><br>
-<input type="text" id="inputBox"><button type="button" onclick="textCreate()">Create text</button>
+<input type="text" id="inputBox" placeholder="Text to append"><button type="button" onclick="textCreate()">Create text</button>
 <div id="space1"></div>
 
+<p><b>document.insertBefore()</b><br></p>
+<p><b>document.removeChild()</b><br></p>
+<p><b>document.replaceChild()</b><br></p>
 
-<p><b>document.removeChild</b><br></p>
-<p><b>document.replaceChild</b><br></p>
-<p><b>document.write</b><br></p>
+Text and place to input: <input type="text" id="inputBox2" placeholder="Text to insert"><input type="number" id="inputIndex" min="0" max="10"><button type="button" onclick="textInsert()">Insert text</button><br>
+Paragraph to be removed: <input type="number" id="removeIndex" min="0" max="10"><button type="button" onclick="textRemove()">Remove text</button><br>
+Text and paragraph to change: <input type="text" id="inputBox3" placeholder="Text for replacing"><input type="number" id="replaceIndex" min="0" max="10"><button type="button" onclick="textReplace()">Replace text</button>
 
+<div id="space2">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo alias temporibus, inventore quae rem vel dolorum at quasi praesentium hic quo voluptatibus nulla debitis nisi eligendi ullam deserunt in cum, veniam reprehenderit a! Voluptates possimus quae eveniet laborum voluptatem quas nisi. Nam porro dolore deleniti esse! Nulla expedita hic autem fuga. Dolores quidem laboriosam consequuntur eos mollitia ipsam aliquam, culpa accusamus atque? Quidem, fuga nam! Nihil, voluptatum laboriosam, consequatur voluptate corporis quas deleniti ipsum perferendis culpa labore, aliquid sint cupiditate nulla quis dignissimos quam minima expedita facilis voluptatem mollitia fugiat illo.
+  <p>Similique veritatis, accusamus aut esse id vel veniam eos assumenda, nulla velit hic, dolore non culpa molestias inventore maiores. Perferendis eveniet illum nesciunt, sapiente aut amet labore vitae quaerat animi, eum ipsum, quas commodi nostrum facere. Eligendi nulla molestias repudiandae, libero optio ab consequuntur id aliquam? Id, accusantium reiciendis? Beatae non, sequi mollitia odit ut nostrum enim distinctio pariatur voluptatibus sapiente, facere eos. Ducimus expedita itaque ipsam? Earum labore ea facere illum perspiciatis obcaecati architecto sint. Nobis soluta dicta, tempore, alias dolorem accusantium odio, esse ex mollitia quod consequuntur ab dolor distinctio saepe ullam!
+  <p>Dolor omnis iste nobis repellat amet enim, voluptates nostrum consequuntur quia esse, facilis modi earum! Saepe placeat tenetur inventore sed nesciunt omnis excepturi quibusdam, et quis esse voluptates delectus magni expedita architecto facilis vel voluptatem aliquam corrupti! Ea, corporis expedita asperiores porro labore officia obcaecati rem molestiae saepe nobis voluptates quasi. Officia necessitatibus alias vel quae aspernatur, dolores quidem, praesentium optio reiciendis ratione doloremque molestias quas repellendus quis. Id pariatur recusandae temporibus, odio est, consequuntur tempora quis iste dolorum quasi distinctio optio iusto. Libero neque dolore non vel quod soluta eum nobis magnam reiciendis et repellat dolores, quibusdam quaerat quia reprehenderit quidem asperiores ut ipsum? Quisquam praesentium earum quam sint porro molestias quas ex!
+</div>
 
 <h2>Finding HTML elements</h2>
 <a href="https://www.w3schools.com/js/js_htmldom_elements.asp" target="_blank">W3 Schools: Elements</a>
