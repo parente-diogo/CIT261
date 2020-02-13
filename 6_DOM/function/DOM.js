@@ -1,6 +1,6 @@
 // CREATE AND APPEND --------------------------------- //
 function buttonCreate() {
-  var btn = document.createElement("BUTTON");
+  var btn = document.createElement("button");
   btn.innerHTML = "New button";
   document.getElementById("space1").appendChild(btn);
 }
