@@ -10,13 +10,14 @@
   <link rel="stylesheet" href="../main/styles/normalize.css">
   <link rel="stylesheet" href="../main/styles/main.css">
   <link rel="stylesheet" href="styles/style.css">
-<script src="function/CSS_Class.js"></script>
+  <script src="function/CSS_Class.js"></script>
 </head>
 
 <body>
   <h6>Manipulating CSS Class Properties Using JavaScript</h6>
   <p>Sources: <a href="https://www.w3schools.com/js/js_htmldom_css.asp" target="_blank">W3 Schools: ID</a><br>
-    <a href="https://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp" target="_blank">W3 Schools: Class</a><br>
+    <a href="https://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp" target="_blank">W3 Schools:
+      Class</a><br>
     <a href="https://www.digitalocean.com/community/tutorials/how-to-modify-attributes-classes-and-styles-in-the-dom"
       target="_blank">Digital Ocean</a><br>
     <a href="https://www.kirupa.com/html5/setting_css_styles_using_javascript.htm" target="_blank">Kirupa</a><br>
@@ -37,18 +38,19 @@
     <li>By a JavaScript function loaded by the buttons.</li>
   </ol>
 
-<h2>ID Attributes</h2>
+  <h2>ID Attributes</h2>
 
-<p>To change attributes calling its <b>ID Name</b> it is possible to change it directly in the button using <b>onclick</b>, it is nont needed to run a For Loop Iteration.</p>
+  <p>To change attributes calling its <b>ID Name</b> it is possible to change it directly in the button using
+    <b>onclick</b>, it is nont needed to run a For Loop Iteration.</p>
   <p>The following text is styled calling the element <b>ID</b>:</p>
   <div id="texto2">
-      <p>Similique veritatis, accusamus aut esse id vel veniam eos assumenda, nulla velit hic, dolore non culpa
-        molestias inventore maiores. Perferendis eveniet illum nesciunt, sapiente aut amet labore vitae quaerat animi,
-        eum ipsum, quas commodi nostrum facere. Eligendi nulla molestias repudiandae, libero optio ab consequuntur id
-        aliquam? Id, accusantium reiciendis? Beatae non, sequi mollitia odit ut nostrum enim distinctio pariatur
-        voluptatibus sapiente, facere eos. Ducimus expedita itaque ipsam? Earum labore ea facere illum perspiciatis
-        obcaecati architecto sint. Nobis soluta dicta, tempore, alias dolorem accusantium odio, esse ex mollitia quod
-        consequuntur ab dolor distinctio saepe ullam!</p>
+    <p>Similique veritatis, accusamus aut esse id vel veniam eos assumenda, nulla velit hic, dolore non culpa
+      molestias inventore maiores. Perferendis eveniet illum nesciunt, sapiente aut amet labore vitae quaerat animi,
+      eum ipsum, quas commodi nostrum facere. Eligendi nulla molestias repudiandae, libero optio ab consequuntur id
+      aliquam? Id, accusantium reiciendis? Beatae non, sequi mollitia odit ut nostrum enim distinctio pariatur
+      voluptatibus sapiente, facere eos. Ducimus expedita itaque ipsam? Earum labore ea facere illum perspiciatis
+      obcaecati architecto sint. Nobis soluta dicta, tempore, alias dolorem accusantium odio, esse ex mollitia quod
+      consequuntur ab dolor distinctio saepe ullam!</p>
   </div>
 
   <button type="button" onclick="document.getElementById('texto2').style.color = 'red'">Red text</button>
@@ -60,22 +62,23 @@
 
   <h2>Class Attributes</h2>
 
-  <p>To change attributes calling its <b>Class Name</b> it is needed to used a JavaScript function, and run a <b>For Loop Iteration</b>.</p>
+  <p>To change attributes calling its <b>Class Name</b> it is needed to used a JavaScript function, and run a <b>For
+      Loop Iteration</b>.</p>
   <p>The following text is styled calling the element <b>CLASS</b>:</p>
-    <div class="texto1">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo alias temporibus, inventore quae rem vel
-        dolorum at quasi praesentium hic quo voluptatibus nulla debitis nisi eligendi ullam deserunt in cum, veniam
-        reprehenderit a! Voluptates possimus quae eveniet laborum voluptatem quas nisi. Nam porro dolore deleniti esse!
-        Nulla expedita hic autem fuga. Dolores quidem laboriosam consequuntur eos mollitia ipsam aliquam, culpa accusamus
-        atque? Quidem, fuga nam! Nihil, voluptatum laboriosam, consequatur voluptate corporis quas deleniti ipsum
-        perferendis culpa labore, aliquid sint cupiditate nulla quis dignissimos quam minima expedita facilis voluptatem
-        mollitia fugiat illo.</p>
-    </div>
-  
-    <button type="button" onclick="classChange1()">Red text</button>
-    <button type="button" onclick="classChange2()">Green text</button>
-    <button type="button" onclick="classChange3()">Blue text</button>
-  
+  <div class="texto1">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo alias temporibus, inventore quae rem vel
+      dolorum at quasi praesentium hic quo voluptatibus nulla debitis nisi eligendi ullam deserunt in cum, veniam
+      reprehenderit a! Voluptates possimus quae eveniet laborum voluptatem quas nisi. Nam porro dolore deleniti esse!
+      Nulla expedita hic autem fuga. Dolores quidem laboriosam consequuntur eos mollitia ipsam aliquam, culpa accusamus
+      atque? Quidem, fuga nam! Nihil, voluptatum laboriosam, consequatur voluptate corporis quas deleniti ipsum
+      perferendis culpa labore, aliquid sint cupiditate nulla quis dignissimos quam minima expedita facilis voluptatem
+      mollitia fugiat illo.</p>
+  </div>
+
+  <button type="button" onclick="classChange1()">Red text</button>
+  <button type="button" onclick="classChange2()">Green text</button>
+  <button type="button" onclick="classChange3()">Blue text</button>
+
 
 
 
@@ -83,16 +86,15 @@
 
 </body>
 <script>
-    
   var x = document.getElementsByClassName('texto1');
-var i;
-for (i = 0; i < x.length; i++) {
-  x[i].style.color = 'white';
-  x[i].style.background = "blue";
-}
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.color = 'white';
+    x[i].style.background = "blue";
+  }
 
-document.getElementById('texto2').style.color = 'gray';
-document.getElementById('texto2').style.background = 'yellow';
+  document.getElementById('texto2').style.color = 'gray';
+  document.getElementById('texto2').style.background = 'yellow';
 </script>
 
 
