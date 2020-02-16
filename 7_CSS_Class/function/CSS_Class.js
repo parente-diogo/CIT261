@@ -1,4 +1,4 @@
-// -------------------------------------------------
+// ID ELEMENTS -------------------------------------
 function idChange1() {
   document.getElementById('texto2').style.background = "pink";
 }
@@ -11,7 +11,7 @@ function idChange3() {
   document.getElementById('texto2').style.background = "black";
 }
 
-// -------------------------------------------------
+// CLASS ELEMENTS ----------------------------------
 function classChange1() {
   var x = document.getElementsByClassName('texto1');
   var i;

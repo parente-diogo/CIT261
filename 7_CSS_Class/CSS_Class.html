@@ -34,14 +34,15 @@
     modify properties:</p>
   <ol>
     <li>Using a script in the HTML file;</li>
-    <li>By a function in the buttons;</li>
+    <li>By a function in the buttons (only ID elements);</li>
     <li>By a JavaScript function loaded by the buttons.</li>
   </ol>
 
   <h2>ID Attributes</h2>
 
   <p>To change attributes calling its <b>ID Name</b> it is possible to change it directly in the button using
-    <b>onclick</b>, it is nont needed to run a For Loop Iteration.</p>
+    <b>onclick</b>, it is not needed to run a For Loop Iteration.<br>For each page it is possible to have only one
+    element specified with each ID name. Then <b>getElementById</b> returns only one element, and not a collection.</p>
   <p>The following text is styled calling the element <b>ID</b>:</p>
   <div id="texto2">
     <p>Similique veritatis, accusamus aut esse id vel veniam eos assumenda, nulla velit hic, dolore non culpa
@@ -63,7 +64,8 @@
   <h2>Class Attributes</h2>
 
   <p>To change attributes calling its <b>Class Name</b> it is needed to used a JavaScript function, and run a <b>For
-      Loop Iteration</b>.</p>
+      Loop Iteration</b>.<br>The getElementsByClassName() method returns a <b>collection of all elements</b> in the
+    document with the specified class name. It is possible to have many elements specified with the same class name.</p>
   <p>The following text is styled calling the element <b>CLASS</b>:</p>
   <div class="texto1">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo alias temporibus, inventore quae rem vel
@@ -75,16 +77,12 @@
       mollitia fugiat illo.</p>
   </div>
 
-  <button type="button" onclick="classChange1()">Red text</button>
-  <button type="button" onclick="classChange2()">Green text</button>
-  <button type="button" onclick="classChange3()">Blue text</button>
-
-
-
-
-
+  <button type="button" onclick="classChange1()">Red and yellow</button>
+  <button type="button" onclick="classChange2()">Green and orange</button>
+  <button type="button" onclick="classChange3()">Blue and pink</button>
 
 </body>
+
 <script>
   var x = document.getElementsByClassName('texto1');
   var i;
@@ -96,6 +94,5 @@
   document.getElementById('texto2').style.color = 'gray';
   document.getElementById('texto2').style.background = 'yellow';
 </script>
-
 
 </html>
