@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../main/styles/normalize.css">
   <link rel="stylesheet" href="../main/styles/main.css">
   <link rel="stylesheet" href="styles/style.css">
+  <script src="function/JSON.js"></script>
 </head>
 
 <body>
@@ -31,21 +32,33 @@ After receiving any data from a webserver, it is needed to convert it back from 
 
 <h2>Stringify</h2>
 
-<p>Insert up to 5 names:</p>
-  <input type="text" id="name1" placeholder="Name 1"><br>
-  <input type="text" id="name2" placeholder="Name 2"><br>
-  <input type="text" id="name3" placeholder="Name 3"><br>
-  <input type="text" id="name4" placeholder="Name 4"><br>
-  <input type="text" id="name5" placeholder="Name 5"><br>
-
+<p>Enter your information:</p>
+  <input type="text" id="name" placeholder="Name"><br>
+  <input type="text" id="surname" placeholder="Surname"><br>
+  <input type="number" id="age" min="1" max="100" placeholder="age"><br>
+  <input type="date" id="birth" min="1900-01-01" max="2019-12-31"><br>
+<button type="button" onclick="store()">Store names</button>
+<button type="button" onclick="stringStore()">Stringify and store names</button>
 
 <h2>Parse</h2>
 
+<button type="button" onclick="getNames()">Retrieve names</button>
+<button type="button" onclick="parseNames()">Retrieve and parse names</button>
+<!--<div id="returnNames1"></div>-->
+<div id="returnNames2"></div>
+<!--<div id="type1"></div>-->
+<div id="type2"></div>
+<!--<div id="length1"></div>-->
+<div id="length2"></div>
 
 
+<button type="button" onclick="tipo()">Variable type</button>
+<button type="button" onclick="comprimento()">Length</button>
+<!--<div id="return1"></div>-->
+<div id="return2"></div>
 
 
-
+<button type="button" onclick="localStorage.clear()">Clear</button>
 </body>
 
 </html>
