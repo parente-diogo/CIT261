@@ -1,13 +1,39 @@
-div {  
+#example1 {
+  width: 200px;
+  height: 110px;
+  background: yellow;
+  transition-duration: 1s;
+  transition-property: width;
+}
+
+#example2 {
+  width: 400px;
+  height: 100px;
+  background: yellow;
+  transition-delay: 1s;
+  transition-duration: 2s;
+  /*transition-property: Disabled because all properties receive transition*/
+  transition-timing-function: linear;
+}
+
+#example1:hover, #example2:hover {
+  width: 700px;
+  height: 200px;
+  color: white;
+  background: blue;
+}
+
+
+/*-----------------------------------------------*/
+table div {  
   width: 100px;
   height: 20px;
   background: green;
-  transition: width 1s;
+  transition: width 2s;
 }
 
-div:hover {
+table div:hover {
   width: 1000px;
-  background: yellow;
 }
 
 #speed1 {transition-timing-function: ease;}
@@ -19,11 +45,4 @@ div:hover {
 
 th {
   text-align: left;
-}
-
-#example1 {
-  background: yellow;
-  transition-delay: 1s;
-  transition-duration: 3s;
-  transition-property: heigth;
 }
