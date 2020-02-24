@@ -28,14 +28,17 @@
   <h1>CSS3 Transitions and Animations</h1>
 
   <h2>TRANSITIONS</h2>
-  <p>A Transition is a gradual change of value to a property during a set time, making the change smooth.</p>
 
+  <p>A Transition is a gradual change of value to a property during a set time, making the change smooth.</p>
   <p><b>transition-delay:</b> Time to start the transition.<br>
     <b>transition-duration:</b> Time the transition will need to reach its ending.<br>
     <b>transition-property:</b> Choose which property is under transition for the element.<br>
     <b>transition-timing-function:</b> Behavior (speed curve) for the transition to obey.<br>
     <b>transition:</b> shorthand to include all transition properties in the same line.
   </p>
+
+<p>The values in the shorthand <b>transition:</b> can be in any position. The delay time will be active only when there is a time for duration, even when duration is 0 seconds. The first time is always for duration, the second is always for delay.</p>
+<p>It is possible to set <b>different transition</b> behavior to each property; it is needed to <b>separate them with a comma</b>.</p>
 
   <div id="example1">
     <p><b>Trigger:</b> Hover<br>
@@ -55,7 +58,7 @@
 
   <h3>SPEED CURVE</h3>
   <p>Hover over each element to see the different speed effect:</p>
-  <table>
+  <table id="table_transition">
     <tr>
       <th>Speed</th>
       <th>Description</th>
@@ -105,24 +108,78 @@
     </tr>
   </table>
 
-
-
-
-
-
-
-
-
   <h2>ANIMATIONS</h2>
 
+  <p>An Animation is a gradual change from an initial style to another style. When an animation is finished, it changes back to its original style</p>
 
 
 
+  <p><b>animation-delay:</b> Time to start the animation.<br>
+    <b>animation-direction:</b> Specifies whether the animation will start from the first instruction (forward) or from the last (backwards). Can be alternate.<br>
+    <b>animation-duration:</b> Time the animation will take to complete one cycle.<br>
+    <b>animation-fill-mode:</b> <br>
+    <b>animation-iteration-count:</b> The amount of cycles the animation will run. Can be set to a <b></b>value or infinite</b>.<br>
+    <b>animation-name:</b> Choose which animation will be tun to the element. It works together with the <b>@keyframes</b> property.<br>
+    <b>animation-play-state:</b> Specify whether the animation is running or paused. Can be used together with hovering the element with the mouse.<br>
+    <b>animation-timing-function:</b> Behavior (speed curve) for the animation to obey.<br>
+    <b>animation:</b> shorthand to include all animation properties in the same line.<br>
+    <b>@keyframes:</b> Sets the instruction codes to run the animation. It works together with the <b>animation-name</b> property.
+  </p>
 
+<h3>DIRECTION</h3>
+<table></table>
 
-
-
-
+<h3>SPEED CURVE</h3>
+<table></table>
+<table id="table_animation">
+  <tr>
+    <th>Speed</th>
+    <th>Description</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td>Ease</td>
+    <td>Slow start, fast, slow end [Default]</td>
+    <td>
+      <div id="speed1"></div>
+    </td>
+  </tr>
+  <tr>
+    <td>Linear</td>
+    <td>Same speed from start to end</td>
+    <td>
+      <div id="speed2"></div>
+    </td>
+  </tr>
+  <tr>
+    <td>Ease in</td>
+    <td>Slow start</td>
+    <td>
+      <div id="speed3"></div>
+    </td>
+  </tr>
+  <tr>
+    <td>Ease out</td>
+    <td>Slow end</td>
+    <td>
+      <div id="speed4"></div>
+    </td>
+  </tr>
+  <tr>
+    <td>Ease in-out</td>
+    <td>Slow start and end</td>
+    <td>
+      <div id="speed5"></div>
+    </td>
+  </tr>
+  <tr>
+    <td>Cubic Bezier</td>
+    <td>Behavior based on the equation</td>
+    <td>
+      <div id="speed6"></div>
+    </td>
+  </tr>
+</table>
 
   <h2>Triggering with JavaScript</h2>
 
