@@ -1,4 +1,5 @@
-/* PROPERTIES EXAMPLES - TRANSITIONS ------------*/
+
+/* PROPERTIES EXAMPLES - TRANSITIONS ------------
 #example1 {
   width: 200px;
   height: 110px;
@@ -13,7 +14,7 @@
   background: yellow;
   transition-delay: 1s;
   transition-duration: 2s;
-  /*transition-property: Disabled because all properties receive transition*/
+  /*transition-property: Disabled because all properties receive transition
   transition-timing-function: linear;
 }
 
@@ -24,15 +25,15 @@
   background: blue;
 }
 
-/* SPEED BEHAVIOR - TRANSITIONS -----------------*/
-#table_transition div {  
+/* SPEED BEHAVIOR - TRANSITIONS -----------------
+.table_transition div {  
   width: 100px;
   height: 20px;
   background: green;
   transition: 2s width, background-color 3s 1s;
 }
 
-#table_transition div:hover {
+.table_transition div:hover {
   width: 1000px;
   background: yellow;
 }
@@ -48,8 +49,8 @@ th {
   text-align: left;
 }
 
-/* SPEED BEHAVIOR - ANIMATIONS ------------------*/
-#table_animation div {  
+/* SPEED BEHAVIOR - ANIMATIONS ------------------
+.table_animation div {  
   width: 50px;
   height: 20px;
   background: red;
@@ -58,6 +59,24 @@ th {
 }
 
 @keyframes move {
-  from {left: 0px;}
-  to {left: 300px;}
+  0% {left: 0px;}
+  45% {left: 300px;}
+  50% {left: 300px;}
+  95% {left: 0px;}
+}
+
+#speed_1 {animation-timing-function: ease;}
+#speed_2 {animation-timing-function: linear;}
+#speed_3 {animation-timing-function: ease-in;}
+#speed_4 {animation-timing-function: ease-out;}
+#speed_5 {animation-timing-function: ease-in-out;}
+#speed_6 {animation-timing-function: cubic-bezier(1,1,1,0.1);}
+
+/* SPEED BEHAVIOR - ANIMATIONS ------------------*/
+/* TRIGGERING ------------------*/
+.square {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  transition: opacity 2s;
 }
