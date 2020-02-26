@@ -1,5 +1,5 @@
 
-/* PROPERTIES EXAMPLES - TRANSITIONS ------------
+/* PROPERTIES EXAMPLES - TRANSITIONS ------------*/
 #example1 {
   width: 200px;
   height: 110px;
@@ -14,7 +14,7 @@
   background: yellow;
   transition-delay: 1s;
   transition-duration: 2s;
-  /*transition-property: Disabled because all properties receive transition
+  /*transition-property: Disabled because all properties receive transition*/
   transition-timing-function: linear;
 }
 
@@ -25,7 +25,7 @@
   background: blue;
 }
 
-/* SPEED BEHAVIOR - TRANSITIONS -----------------
+/* SPEED BEHAVIOR - TRANSITIONS -----------------*/
 .table_transition div {  
   width: 100px;
   height: 20px;
@@ -49,7 +49,7 @@ th {
   text-align: left;
 }
 
-/* SPEED BEHAVIOR - ANIMATIONS ------------------
+/* SPEED BEHAVIOR - ANIMATIONS ------------------*/
 .table_animation div {  
   width: 50px;
   height: 20px;
@@ -72,11 +72,40 @@ th {
 #speed_5 {animation-timing-function: ease-in-out;}
 #speed_6 {animation-timing-function: cubic-bezier(1,1,1,0.1);}
 
-/* SPEED BEHAVIOR - ANIMATIONS ------------------*/
-/* TRIGGERING ------------------*/
-.square {
+/* TRIGGERING - TRANSITIONS ---------------------*/
+.square1 {
   width: 100px;
   height: 100px;
   background: blue;
-  transition: opacity 2s;
+  transition: 2s;
+}
+
+/* TRIGGERING - ANIMATIONS ----------------------*/
+.square2 {
+  width: 50px;
+  height: 50px;
+  background: brown;
+  position: relative;
+}
+
+@keyframes move1 {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+
+@keyframes move2 {
+  0% {top: 0px; left: 0px;}
+  40% {top: 0px; left: 200px;}
+  50% {top: 50px; left: 200px;}
+  90% {top: 50px; left: 0px;}
+  100% {top: 0px; left: 0px;}
+}
+
+#example6:hover {
+  animation-play-state: paused;
+}
+
+/*-----------------------------------------------*/
+#space {
+  margin: 50px;
 }

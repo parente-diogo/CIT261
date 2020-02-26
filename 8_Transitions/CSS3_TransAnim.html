@@ -20,7 +20,7 @@
     <a href="https://css-tricks.com/almanac/properties/t/transition/" target="_blank">CSS-Tricks: Transitions</a><br>
     <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">W3 Schools: Animation</a><br>
     <a href="https://css-tricks.com/almanac/properties/a/animation/" target="_blank">CSS-Tricks: Animation</a><br>
-    <a href="https://tableless.com.br/transition-e-animation/" target="_blank">Tableless.com.br</a>
+    <a href="https://www.youtube.com/watch?v=TKPAh3_CtBY" target="_blank">Trigger transition</a>
   </p>
 
   <p>Video explaining the topic (starting in 00:00:00): <a href="" target="_blank">Video</a></p>
@@ -28,7 +28,7 @@
   <h1>CSS3 Transitions and Animations</h1>
 
   <h2>TRANSITIONS</h2>
-<!--
+
   <p>A Transition is a gradual change of value to a property during a set time, making the change smooth.</p>
   <p><b>transition:</b> shorthand to include all transition properties in the same line.
     <b>transition-delay:</b> Time to start the transition.<br>
@@ -133,7 +133,7 @@
 <h3>@KEYFRAMES</h3>
 <p>It is the code to create the steps for the animation. It is similar to creating a function, but we are listing what will the animation accompplish.<br>After calling the <b>@keyframes</b> property comes the <b>name</b> for the animation. This name will be called inside the style declaration for an element.</p>
 <p>The animation can be specified using <b>from</b> and <b>to</b>, having only two steps (0% and 100%). It is possible to specify the animation using percentage, then it's possible to have many steps in each animation.</p>
--->
+
   <!--<h3>DIRECTION</h3>
   <table></table>-->
 
@@ -189,22 +189,29 @@
     </tr>
   </table>
 
-  <h2>Triggering with JavaScript</h2>
+  <h2>TRIGGERING WITH JAVASCRIPT</h2>
 <p>animationStart<br>
 animationIteration<br>
 animationEnd</p>
 <p>animation-play-state</p>
 
 
-<div id="square1" class="square"></div>
-<button type="button" onclick="fadeOut()">Change color</button>
-<!--<button type="button" onclick="enlarge()">Enlarge</button>
+<h3>TRANSITIONS</h3>
+<button type="button" onclick="changeColor()">Change color</button>
+<button type="button" onclick="enlarge()">Enlarge</button>
 <button type="button" onclick="shrink()">Shrink</button>
 <button type="button" onclick="fadeOut()">Fade Out</button>
 <button type="button" onclick="resetBox1()">Reset</button>
--->
+<div id="example5" class="square1"></div>
 
+<h3>ANIMATIONS</h3>
+<button type="button" onclick="moveRight()">Move rigth</button>
+<button type="button" onclick="moveRing1()">Circuit 1</button>
+<button type="button" onclick="document.getElementById('example6').style.animationPlayState = 'paused'">Pause</button>
+<button type="button" onclick="document.getElementById('example6').style.animationPlayState = 'running'">Resume</button>
+<div id="example6" class="square2"></div>
 
+<p id="space"></p>
 </body>
 
 </html>
