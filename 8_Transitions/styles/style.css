@@ -34,8 +34,8 @@
 }
 
 .table_transition div:hover {
-  width: 700px;
-  background: yellow;
+  width: 600px;
+  background: blue;
 }
 
 #speed1 {transition-timing-function: ease;}
