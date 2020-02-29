@@ -33,31 +33,48 @@ After receiving any data from a webserver, it is needed to convert it back from 
 <h2>Stringify</h2>
 
 <p>Enter your information:</p>
-  <input type="text" id="name" placeholder="Name"><br>
-  <input type="text" id="surname" placeholder="Surname"><br>
-  <input type="number" id="age" min="1" max="100" placeholder="age"><br>
-  <input type="date" id="birth" min="1900-01-01" max="2019-12-31"><br>
-<button type="button" onclick="store()">Store names</button>
-<button type="button" onclick="stringStore()">Stringify and store names</button>
+<table>
+  <tr>
+    <td>Name:</td>
+    <td><input type="text" id="name" placeholder="Name"></td>
+  </tr>
+  <tr>
+    <td>Surname:</td>
+    <td><input type="text" id="surname" placeholder="Surname"></td>
+  </tr>
+  <tr>
+    <td>Current age:</td>
+    <td><input type="number" id="age" min="1" max="100" placeholder="age"></td>
+  </tr>
+  <tr>
+    <td>Birthday:</td>
+    <td><input type="date" id="birth" min="1900-01-01" max="2019-12-31"></td>
+  </tr>
+</table>
+   <br>
+<button type="button" onclick="store()">Store information</button>
+<button type="button" onclick="stringStore()">Stringify and store information</button>
 
 <h2>Parse</h2>
 
 <button type="button" onclick="getNames()">Retrieve names</button>
 <button type="button" onclick="parseNames()">Retrieve and parse names</button>
-<!--<div id="returnNames1"></div>-->
-<div id="returnNames2"></div>
+<div id="data1"></div>
+<div id="data2"></div>
+<div id="data3"></div>
+<div id="dataString1"></div>
+<div id="dataString2"></div>
+<div id="dataString3"></div>
 <!--<div id="type1"></div>-->
-<div id="type2"></div>
 <!--<div id="length1"></div>-->
-<div id="length2"></div>
 
 
-<button type="button" onclick="tipo()">Variable type</button>
+<!--<button type="button" onclick="tipo()">Variable type</button>
 <button type="button" onclick="comprimento()">Length</button>
-<!--<div id="return1"></div>-->
-<div id="return2"></div>
+<div id="return1"></div>
+<div id="return2"></div>-->
 
-
+<p><b>Clear Local Storage</b></p>
 <button type="button" onclick="localStorage.clear()">Clear</button>
 </body>
 
