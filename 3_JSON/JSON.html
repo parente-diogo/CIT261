@@ -15,10 +15,7 @@
 <body>
   <h6>JSON Parse, Stringify</h6>
   <p>Sources: <a href="https://www.w3schools.com/js/js_json_stringify.asp" target="_blank">W3 Schools: Stringify</a><br>
-    <a href="https://www.w3schools.com/js/js_json_parse.asp" target="_blank">W3 Schools: Parse</a><br>
-    <a href="#" target="_blank"></a><br>
-    <a href="#" target="_blank"></a><br>
-    <a href="#" target="_blank"></a>
+    <a href="https://www.w3schools.com/js/js_json_parse.asp" target="_blank">W3 Schools: Parse</a>
   </p>
 
   <p>Video explaining the topic (starting in 00:00:00): <a href="" target="_blank">Video</a></p>
@@ -31,6 +28,7 @@
 After receiving any data from a webserver, it is needed to convert it back from string to a JavaScript Object using <b>Parse()</b>.</p>
 
 <h2>Stringify</h2>
+<p>It is possible to turn any variable or object to a string.<br>The information inserted below is appended to an Array and in Associative Arrays, then turn them to strings.</p>
 
 <p>Enter your information:</p>
 <table>
@@ -54,20 +52,22 @@ After receiving any data from a webserver, it is needed to convert it back from 
    <br>
 <button type="button" onclick="store()">Store information</button>
 <button type="button" onclick="stringStore()">Stringify and store information</button>
+<p>The first button only store the information in the Local Storage without Stringifying them.<br>The second button Stringify the information and then store it in the Local Storage.</p>
 
 <h2>Parse</h2>
+<p>As long as the information to be retrieved is in JSON format it is possible to parse it back from string to an JavaScript object.<br>If the information to be retrieved is not in JSON format there will be an error in the webpage when running the parse method.</p>
 
 <button type="button" onclick="getNames()">Retrieve names</button>
 <button type="button" onclick="parseNames()">Retrieve and parse names</button>
 <table>
   <tr>
-    <th id="larg1">Data</th>
-    <th class="larg">Type</th>
-    <th class="larg">Length</th>
-    <th class="larg">Name</th>
-    <th class="larg">Surname</th>
-    <th class="larg">Age</th>
-    <th class="larg">Birthday</th>
+    <th class="larg1" id="head1"></th>
+    <th class="larg" id="head2"></th>
+    <th class="larg" id="head3"></th>
+    <th class="larg" id="head4"></th>
+    <th class="larg" id="head5"></th>
+    <th class="larg" id="head6"></th>
+    <th class="larg" id="head7"></th>
   </tr>
   <tr>
     <td id="data1"></td>
@@ -98,14 +98,13 @@ After receiving any data from a webserver, it is needed to convert it back from 
   </tr>
 </table>
 
+<p>The first button will retrieve the information from the Local Storage but not parse it. There will be no parse error in the webpage, even when the information is not in JSON format, but the original objects will return as strings. The length of characters will count even the brackets and commas.<br>
+  The second button will retrieve the information from the Local Storage and parse it. If the information is in JSON format, they will return as JavaScript objects.
+</p>
 
-<!--<button type="button" onclick="tipo()">Variable type</button>
-<button type="button" onclick="comprimento()">Length</button>
-<div id="return1"></div>
-<div id="return2"></div>-->
+<p><b>Clear</b></p>
+<button type="button" onclick="localStorage.clear()">Clear Local Storage</button>
+<button type="button" onclick="clearAll()">Clear Table</button>
 
-<p><b>Clear Local Storage</b></p>
-<button type="button" onclick="localStorage.clear()">Clear</button>
 </body>
-
 </html>
