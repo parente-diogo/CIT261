@@ -10,14 +10,15 @@
   <link rel="stylesheet" href="../main/styles/normalize.css">
   <link rel="stylesheet" href="../main/styles/main.css">
   <link rel="stylesheet" href="styles/style.css">
+  <script src="function/canvas.js"></script>
 </head>
 
-<body>
+<body onload="InitThis()">
   <h6>HTML5 Tags - Video, Audio, and Canvas</h6>
   <p>Sources: <a href="https://www.w3schools.com/html/html5_video.asp" target="_blank">W3 Schools: Video</a><br>
     <a href="https://www.w3schools.com/html/html5_audio.asp" target="_blank">W3 Schools: Audio</a><br>
     <a href="https://www.w3schools.com/html/html5_canvas.asp" target="_blank">W3 Schools: Canvas</a><br>
-    <a href="#" target="_blank"></a><br>
+    <a href="https://www.codicode.com/art/how_to_draw_on_a_html5_canvas_with_a_mouse.aspx" target="_blank">Codicode.com: Canvas</a><br>
     <a href="#" target="_blank"></a><br>
   </p>
 
@@ -56,15 +57,29 @@
       options).<br>
     </p>
 
-
-
-
     <h2>CANVAS</h2>
 
-
-
-
-
+<p>The <b>Canvas</b> is used to draw graphics.<br></p>
+<canvas id="myCanvas" width="400" height="200" style="border:1px solid black;">Your browser does not support canvas.</canvas><br>
+<button type="button" onclick="clearArea()">Clear Area</button>
+        Line width : <select id="selWidth">
+            <option value="1">1</option>
+            <option value="3">3</option>
+            <option value="5">5</option>
+            <option value="7">7</option>
+            <option value="9" selected="selected">9</option>
+            <option value="11">11</option>
+        </select>
+        Color : <select id="selColor">
+            <option value="black">black</option>
+            <option value="blue" selected="selected">blue</option>
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="yellow">yellow</option>
+            <option value="gray">gray</option>
+        </select>
+        <button type="button" onclick="circle()">Circle</button>
+        <button type="button" onclick="rect()">Rectangle</button>
 
 </body>
 
