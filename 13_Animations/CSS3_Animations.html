@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays">
+  <title>CIT 261 | Topic 13 | CSS3 Animations</title>
+  <link rel="stylesheet" href="../main/styles/normalize.css">
+  <link rel="stylesheet" href="../main/styles/main.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <h6>Designing, Defining, and Triggering CSS3 Animations without Custom Libraries</h6>
+  <p>Sources: <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">W3 Schools</a><br>
+    <a href="https://css-tricks.com/almanac/properties/a/animation/" target="_blank">CSS-Tricks</a><br>
+  </p>
+
+  <p>Video explaining the topic (starting in 00:16:15): <a href="https://byui.zoom.us/rec/share/3MVyc6j_6HlLToGQxkf5eYAtDtrgT6a80ShP-vsIyE0rVbfGjFE5wwzGAwRIhJBF" target="_blank">Video</a></p>
+
+  <h1>CSS3 Animations</h1>
+  <p>An Animation is a gradual change from an initial style to another style. When an animation is finished, it changes
+    back to its original style</p>
+
+  <p><b>@keyframes:</b> Sets the instruction codes to run the animation. It works together with the <b>animation-name</b> property.
+    <b>animation:</b> shorthand to include all animation properties in the same line.<br>
+    <b>animation-delay:</b> Time to start the animation.<br>
+    <b>animation-direction:</b> Specifies whether the animation will start from the first instruction (forward) or from the last (backwards). Can be alternate.<br>
+    <b>animation-duration:</b> Time the animation will take to complete one cycle. Must be a value higher than zero; if it is equal to zero there will be no animation; the animation will jump to the end right after loading it.<br>
+    <b>animation-fill-mode:</b> <br>
+    <b>animation-iteration-count:</b> The amount of cycles the animation will run. Can be set to a <b></b>value or infinite</b>.<br>
+    <b>animation-name:</b> Choose which animation will be tun to the element. It works together with the <b>@keyframes</b> property.<br>
+    <b>animation-play-state:</b> Specify whether the animation is running or paused. Can be used together with hovering the element with the mouse.<br>
+    <b>animation-timing-function:</b> Behavior (speed curve) for the animation to obey.<br>
+  </p>
+
+<h3>@KEYFRAMES</h3>
+<p>It is the code to create the steps for the animation. It is similar to creating a function, but we are listing what will the animation accompplish.<br>After calling the <b>@keyframes</b> property comes the <b>name</b> for the animation. This name will be called inside the style declaration for an element.</p>
+<p>The animation can be specified using <b>from</b> and <b>to</b>, having only two steps (0% and 100%). It is possible to specify the animation using percentage, then it's possible to have many steps in each animation.</p>
+
+  <h3>SPEED CURVE</h3>
+  <table class="table_animation">
+    <tr>
+      <th>Speed</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+    <tr>
+      <td>Ease</td>
+      <td>Slow start, fast, slow end [Default]</td>
+      <td>
+        <div id="speed_1"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>Linear</td>
+      <td>Same speed from start to end</td>
+      <td>
+        <div id="speed_2"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>Ease in</td>
+      <td>Slow start</td>
+      <td>
+        <div id="speed_3"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>Ease out</td>
+      <td>Slow end</td>
+      <td>
+        <div id="speed_4"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>Ease in-out</td>
+      <td>Slow start and end</td>
+      <td>
+        <div id="speed_5"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>Cubic Bezier</td>
+      <td>Behavior based on the equation</td>
+      <td>
+        <div id="speed_6"></div>
+      </td>
+    </tr>
+  </table>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h3>Libraries</h3>
+
+  <p> A library is a piece of code made to be re-used. Using libraries, someone doesn't need to create some part of the
+    code, because anybody else has already created, tested, approved, and it works well. It saves development time
+    letting the programmer to spend work and effort in other functionalities of the application in development.</p>
+
+  <div class="box">
+    <a href="https://stackoverflow.com/questions/3057526/framework-vs-toolkit-vs-library" target="_blank">Stack
+      Overflow</a><br>
+    <p>Both historically, and currently, a library is a collection of code relating to a specific task, or set of
+      closely
+      related tasks which operate at roughly the same level of abstraction. It generally lacks any purpose or intent of
+      it's own, and is intended to be used by (consumed) and integrated with client code to assist client code in
+      executing it's tasks.</p>
+    <p>I think it's unanimous that a library is code already coded that you can use so as not to have to code it again.
+      The code must be organized in a way that allows you to look up the functionality you want and use it from your own
+      code.<br>
+      Most programming languages come with standard libraries, especially some code that implements some kind of
+      collection. This is always for the convenience that you don't have to code these things yourself. Similarly, most
+      programming languages have construct to allow you to look up functionality from libraries, with things like
+      dynamic
+      linking, namespaces, etc.<br>
+      So code that finds itself often needed to be re-used is great code to be put inside a library.</p>
+  </div>
+
+  <div class="box">
+    <a href="https://www.programcreek.com/2011/09/what-is-the-difference-between-a-java-library-and-a-framework/"
+      target="_blank">Program Creek</a><br>
+    <p>A library is just a collection of class definitions. The reason behind is simply code reuse, i.e. get the code
+      that
+      has already been written by other developers. The classes and methods normally define specific operations in a
+      domain specific area. For example, there are some libraries of mathematics which can let developer just call the
+      function without redo the implementation of how an algorithm works.</p>
+  </div>
+
+  <a href="https://becode.com.br/framework-biblioteca-api-entenda-as-diferencas/" target="_blank">Becode</a><br>
+</body>
+
+</html>

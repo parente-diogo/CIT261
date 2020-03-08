@@ -1,4 +1,3 @@
-
 /* PROPERTIES EXAMPLES - TRANSITIONS ------------*/
 #example1 {
   width: 200px;
@@ -16,7 +15,6 @@
   transition-duration: 2s;
   /*transition: Disabled because all properties receive transition*/
   transition-timing-function: linear;
-  transition: yellow 1s
 }
 
 #example1:hover, #example2:hover {

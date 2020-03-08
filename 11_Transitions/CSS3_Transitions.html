@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays">
+  <title>CIT 261 | Topic 11 | CSS3 Transitions</title>
+  <link rel="stylesheet" href="../main/styles/normalize.css">
+  <link rel="stylesheet" href="../main/styles/main.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <h6>Designing, Defining, and Triggering CSS3 Transitions without Custom Libraries</h6>
+  <p>Sources: <a href="https://www.w3schools.com/css/css3_transitions.asp" target="_blank">W3 Schools</a><br>
+  <a href="https://css-tricks.com/almanac/properties/t/transition/" target="_blank">CSS-Tricks</a><br>
+  </p>
+
+  <p>Video explaining the topic (starting in 00:16:15): <a href="https://byui.zoom.us/rec/share/3MVyc6j_6HlLToGQxkf5eYAtDtrgT6a80ShP-vsIyE0rVbfGjFE5wwzGAwRIhJBF" target="_blank">Video</a></p>
+
+  <h1>CSS3 Transitions</h1>
+
+  <p>A Transition is a gradual change of value to a property during a set time, making the change smooth.</p>
+  <p><b>transition:</b> shorthand to include all transition properties in the same line.
+    <b>transition-delay:</b> Time to start the transition.<br>
+    <b>transition-duration:</b> Time the transition will need to reach its ending.<br>
+    <b>transition-property:</b> Choose which property is under transition for the element.<br>
+    <b>transition-timing-function:</b> Behavior (speed curve) for the transition to obey.<br>
+  </p>
+
+  <p>The values in the shorthand <b>transition:</b> can be in any position. The delay time will be active only when
+    there is a time for duration, even when duration is 0 seconds. The first time is always for duration, the second is
+    always for delay.</p>
+  <p>It is possible to set <b>different transition</b> behavior to each property; it is needed to <b>separate them with
+      a comma</b>.</p>
+
+  <div id="example1">
+    <p><b>Trigger:</b> Hover<br>
+      <b>Delay:</b> 0 seconds<br>
+      <b>Duration:</b> 1 second<br>
+      <b>Property:</b> width<br>
+      <b>Timing function:</b> default</p>
+  </div>
+
+  <div id="example2">
+    <p><b>Trigger:</b> Hover<br>
+      <b>Delay:</b> 1 second<br>
+      <b>Duration:</b> 2 seconds<br>
+      <b>Property:</b> width and height size, background and font color<br>
+      <b>Timing function:</b> linear</p>
+  </div>
+
+  <h3>SPEED CURVE</h3>
+  <p>Hover over each element to see the different speed effect:</p>
+  <table class="table_transition">
+    <tr>
+      <th>Speed</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+    <tr>
+      <td>Ease</td>
+      <td>Slow start, fast, slow end [Default]</td>
+      <td>
+        <div id="speed1"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>Linear</td>
+      <td>Same speed from start to end</td>
+      <td>
+        <div id="speed2"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>Ease in</td>
+      <td>Slow start</td>
+      <td>
+        <div id="speed3"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>Ease out</td>
+      <td>Slow end</td>
+      <td>
+        <div id="speed4"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>Ease in-out</td>
+      <td>Slow start and end</td>
+      <td>
+        <div id="speed5"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>Cubic Bezier</td>
+      <td>Behavior based on the equation</td>
+      <td>
+        <div id="speed6"></div>
+      </td>
+    </tr>
+  </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h3>Libraries</h3>
+
+  <p> A library is a piece of code made to be re-used. Using libraries, someone doesn't need to create some part of the
+    code, because anybody else has already created, tested, approved, and it works well. It saves development time
+    letting the programmer to spend work and effort in other functionalities of the application in development.</p>
+
+  <div class="box">
+    <a href="https://stackoverflow.com/questions/3057526/framework-vs-toolkit-vs-library" target="_blank">Stack
+      Overflow</a><br>
+    <p>Both historically, and currently, a library is a collection of code relating to a specific task, or set of
+      closely
+      related tasks which operate at roughly the same level of abstraction. It generally lacks any purpose or intent of
+      it's own, and is intended to be used by (consumed) and integrated with client code to assist client code in
+      executing it's tasks.</p>
+    <p>I think it's unanimous that a library is code already coded that you can use so as not to have to code it again.
+      The code must be organized in a way that allows you to look up the functionality you want and use it from your own
+      code.<br>
+      Most programming languages come with standard libraries, especially some code that implements some kind of
+      collection. This is always for the convenience that you don't have to code these things yourself. Similarly, most
+      programming languages have construct to allow you to look up functionality from libraries, with things like
+      dynamic
+      linking, namespaces, etc.<br>
+      So code that finds itself often needed to be re-used is great code to be put inside a library.</p>
+  </div>
+
+  <div class="box">
+    <a href="https://www.programcreek.com/2011/09/what-is-the-difference-between-a-java-library-and-a-framework/"
+      target="_blank">Program Creek</a><br>
+    <p>A library is just a collection of class definitions. The reason behind is simply code reuse, i.e. get the code
+      that
+      has already been written by other developers. The classes and methods normally define specific operations in a
+      domain specific area. For example, there are some libraries of mathematics which can let developer just call the
+      function without redo the implementation of how an algorithm works.</p>
+  </div>
+
+  <a href="https://becode.com.br/framework-biblioteca-api-entenda-as-diferencas/" target="_blank">Becode</a><br>
+</body>
+
+</html>

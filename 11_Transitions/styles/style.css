@@ -1,0 +1,55 @@
+/* PROPERTIES EXAMPLES - TRANSITIONS ------------*/
+#example1 {
+  width: 200px;
+  height: 110px;
+  background: yellow;
+  transition-duration: 1s;
+  transition-property: width;
+}
+
+#example2 {
+  width: 400px;
+  height: 100px;
+  background: yellow;
+  transition-delay: 1s;
+  transition-duration: 2s;
+  /*transition: Disabled because all properties receive transition*/
+  transition-timing-function: linear;
+}
+
+#example1:hover, #example2:hover {
+  width: 700px;
+  height: 200px;
+  color: white;
+  background: blue;
+}
+
+/* SPEED BEHAVIOR - TRANSITIONS -----------------*/
+.table_transition div {  
+  width: 100px;
+  height: 20px;
+  background: green;
+  transition: 2s width, background-color 3s 1s;
+}
+
+.table_transition div:hover {
+  width: 800px;
+  background: yellow;
+}
+
+#speed1 {transition-timing-function: ease;}
+#speed2 {transition-timing-function: linear;}
+#speed3 {transition-timing-function: ease-in;}
+#speed4 {transition-timing-function: ease-out;}
+#speed5 {transition-timing-function: ease-in-out;}
+#speed6 {transition-timing-function: cubic-bezier(1,1,1,0.1);}
+
+th {
+  text-align: left;
+}
+
+.box {
+  border: black 1px solid;
+  padding: 10px;
+  margin-bottom: 10px;
+}
