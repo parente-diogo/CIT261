@@ -14,8 +14,9 @@
   background: yellow;
   transition-delay: 1s;
   transition-duration: 2s;
-  /*transition-property: Disabled because all properties receive transition*/
+  /*transition: Disabled because all properties receive transition*/
   transition-timing-function: linear;
+  transition: yellow 1s
 }
 
 #example1:hover, #example2:hover {
