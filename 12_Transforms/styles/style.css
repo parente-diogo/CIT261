@@ -1,3 +1,133 @@
+.example {
+  width: 80px;
+  height: 50px;
+  background-color: red;
+  border: black 1px solid;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  transition: 1s;
+}
+
+/* 2D TRANSFORMS ----------------------------------------------*/
+#ex_translate:hover {
+  transform: translate(-40px,10px);
+}
+
+#ex_translateX:hover {
+  transform: translateX(30px);
+}
+
+#ex_translateY:hover {
+  transform: translateY(-20px);
+}
+
+#ex_rotate1:hover {
+  transform: rotate(-60deg);
+}
+
+#ex_rotate2:hover {
+  transform: rotate(60deg);
+}
+
+#ex_scale1:hover {
+  transform: scale(2, 4);
+}
+
+#ex_scale2:hover {
+  transform: scale(0.5, 0.8);
+}
+
+#ex_scaleX:hover {
+  transform: scaleX(1.7);
+}
+
+#ex_scaleY:hover {
+  transform: scaleY(1.7);
+}
+
+#ex_skew1:hover {
+  transform: skew(-10deg, -10deg);
+}
+
+#ex_skew2:hover {
+  transform: skew(15deg, -15deg);
+}
+
+#ex_skewX:hover {
+  transform: skewX(25deg);
+}
+
+#ex_skewY:hover {
+  transform: skewY(25deg);
+}
+
+#ex_matrix1:hover {
+  transform: matrix(0, 1, 1, 0.5, 50, 30);
+}
+
+/* 3D TRANSFORMS ----------------------------------------------*/
+/*
+#ex3_translate:hover {
+  
+}
+
+#ex3_translateX:hover {
+  
+}
+
+#ex3_translateY:hover {
+  
+}
+
+#ex3_translateZ:hover {
+  
+}
+
+#ex3_rotate:hover {
+  
+}
+
+#ex3_rotateX:hover {
+  transform: rotateX(150deg)
+}
+
+#ex3_rotateY:hover {
+  transform: rotateY(150deg)
+}
+
+#ex3_rotateZ:hover {
+  transform: rotateZ(150deg)
+}
+
+#ex3_scale:hover {
+  
+}
+
+#ex3_scaleX:hover {
+  
+}
+
+#ex3_scaleY:hover {
+  
+}
+
+#ex3_scaleZ:hover {
+  
+}
+
+#ex3_matrix:hover {
+  
+}
+
+#ex3_perspective:hover {
+  
+}
+*/
+
+
+
+/*-------------------------------------------------------------*/
 .box {
   border: black 1px solid;
   padding: 10px;
