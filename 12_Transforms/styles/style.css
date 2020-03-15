@@ -98,7 +98,7 @@
 #ex3_rotateZ:hover {
   transform: rotateZ(150deg);
 }
-
+/*
 #ex3_scale:hover {
   transform-style: preserve-3d;
   transform: scale3d(2,2,2);
@@ -123,6 +123,7 @@
 #ex3_perspective:hover {
   
 }
+*/
 
 #persp3d {
   perspective: 100px;
