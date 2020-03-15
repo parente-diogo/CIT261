@@ -67,53 +67,53 @@
 }
 
 /* 3D TRANSFORMS ----------------------------------------------*/
-/*
 #ex3_translate:hover {
-  
+  transform: translate3d(-20px,-20px,-20px);
 }
 
 #ex3_translateX:hover {
-  
+  transform: translateX(20px);
 }
 
 #ex3_translateY:hover {
-  
+  transform: translateY(20px);
 }
 
 #ex3_translateZ:hover {
-  
+  transform: translateZ(40px);
 }
 
 #ex3_rotate:hover {
-  
+  transform: rotate3d(1,1,1,360deg);
 }
 
 #ex3_rotateX:hover {
-  transform: rotateX(150deg)
+  transform: rotateX(150deg);
 }
 
 #ex3_rotateY:hover {
-  transform: rotateY(150deg)
+  transform: rotateY(150deg);
 }
 
 #ex3_rotateZ:hover {
-  transform: rotateZ(150deg)
+  transform: rotateZ(150deg);
 }
 
 #ex3_scale:hover {
-  
+  transform-style: preserve-3d;
+  transform: scale3d(2,2,2);
 }
 
 #ex3_scaleX:hover {
-  
+  transform: scaleX(2);
 }
 
 #ex3_scaleY:hover {
-  
+  transform: scaleY(2);
 }
 
 #ex3_scaleZ:hover {
-  
+  transform: scaleZ(5);
 }
 
 #ex3_matrix:hover {
@@ -123,9 +123,10 @@
 #ex3_perspective:hover {
   
 }
-*/
 
-
+#persp3d {
+  perspective: 100px;
+}
 
 /*-------------------------------------------------------------*/
 .box {
