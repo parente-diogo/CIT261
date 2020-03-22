@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../main/styles/normalize.css">
   <link rel="stylesheet" href="../main/styles/main.css">
   <link rel="stylesheet" href="styles/style.css">
+  <script src="function/JavaScript.js"></script>
 </head>
 
 <body>
@@ -28,11 +29,52 @@
   <h1>JavaScript</h1>
 
 <h2>Loops</h2>
-<p>A Loop is a block of code made to be repeated. It runs the same code , but using different values each time</p>
+<p>A Loop is a block of code made to be repeated. It runs the same code, but can use different values each time to achieve different results.</p>
+
+<table>
+  <tr>
+    <td><input type="number" id="first" min="0" max="10" placeholder="Start">
+      <input type="number" id="turns" min="0" max="20" placeholder="Turns">
+      <input type="number" id="pace" min="1" max="5" placeholder="Pace"></td>
+      <td>-----------</td>
+    <td><input type="number" id="first2" min="0" max="10" placeholder="Start">
+      <input type="number" id="last" min="0" max="20" placeholder="End">
+      <input type="number" id="pace2" min="1" max="5" placeholder="Pace"></td>
+  </tr>
+  <tr>
+    <td><button type="button" onclick="forLoop()">Run <b>For Loop</b></button></td>
+    <td></td>
+    <td><button type="button" onclick="whileLoop()">Run <b>While Loop</b></button></td>
+    <td><button type="button" onclick="doWhileLoop()">Run <b>Do While Loop</b></button></td>
+  </tr>
+  <tr>
+    <td><div id="outForLoop"></div></td>
+    <td></td>
+    <td><div id="outWhileLoop"></div></td>
+    <td><div id="outDoWhileLoop"></div></td>
+  </tr>
+</table>
 
 <h3>For Loop</h3>
-<h3>While</h3>
-<h3>Do While</h3>
+<p>The <b>For Loop</b> will run the code as much times as specified by the values in the statements and/or inside the loop.</br>It can have 3 statements. All three statements are optional.</p>
+<table>
+  <tr>
+    <td>Statement 1</td>
+    <td>Initialization of variables. Any amount of variables.<br>Usually the variable used in the loop is initiated.</td>
+  </tr>
+  <tr>
+    <td>Statement 2</td>
+    <td>Evaluate the condition to run the loop. When the condition is <b>TRUE</b> the loop will run.<br>Must have a condition that will turn to <b>FALSE</b> sometime or have a <b>break</b>. Otherwise  the loop will never end and the browser will stop working.</td>
+  </tr>
+  <tr>
+    <td>Statement 3</td>
+    <td>Usually used to <b>increment</b> or <b>decrement</b> the loop counter. It is possible to use it for any other logic.<br>The loop counter can be changed inside the loop.</td>
+  </tr>
+</table>
+
+<h3>While / Do While Loop</h3>
+<p>The <b>While Loop</b> will run the code <b>WHILE</b> the assessed condition is true.</p>
+<p>The <b>Do While Loop</b> will run the code <b>at least once</b>, even if the condition is false. After each time the code is run, the condition is evaluated to run it again or not.</p>
 
 <h2>Conditional Statements</h2>
 <h2>Functions</h2>
