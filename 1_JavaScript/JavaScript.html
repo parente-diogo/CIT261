@@ -93,7 +93,7 @@
   </tr>
   <tr>
     <td>Switch</td>
-    <td>Specify many blocks of code. Each one, some or none blocks can be run depending on the conditions.</td>
+    <td>Specify many blocks of code, equal or different. Each will be performed based on different conditions.</td>
   </tr>
 </table>
 </br>
@@ -109,7 +109,6 @@
     <td>if</td>
     <td><input type="number" id="1val1" min="0" max="10" placeholder="Value 1"> >
       <input type="number" id="1val2" min="0" max="10" placeholder="Value 2"></td>
-    </td>
     <td><b>Value 1</b> is greater than <b>Value 2</b></td>
     <td id="1result1"></td>
   </tr>
@@ -117,7 +116,6 @@
     <td>if</td>
     <td><input type="number" id="1val3" min="0" max="10" placeholder="Value 3"> >
       <input type="number" id="1val4" min="0" max="10" placeholder="Value 4"></td>
-    </td>
     <td><b>Value 3</b> is greater than <b>Value 4</b></td>
     <td id="1result2"></td>
   </tr>
@@ -136,7 +134,6 @@
     <td>if</td>
     <td><input type="number" id="2val1" min="0" max="10" placeholder="Value 5"> >
       <input type="number" id="2val2" min="0" max="10" placeholder="Value 6"></td>
-    </td>
     <td><b>Value 5</b> is greater than <b>Value 6</b></td>
     <td id="2result1"></td>
   </tr>
@@ -144,7 +141,6 @@
     <td>else if</td>
     <td><input type="number" id="2val3" min="0" max="10" placeholder="Value 7"> >
       <input type="number" id="2val4" min="0" max="10" placeholder="Value 8"></td>
-    </td>
     <td><b>Value 7</b> is greater than <b>Value 8</b></td>
     <td id="2result2"></td>
   </tr>
@@ -163,7 +159,6 @@
     <td>if</td>
     <td><input type="number" id="3val1" min="0" max="10" placeholder="Value 9"> >
       <input type="number" id="3val2" min="0" max="10" placeholder="Value 10"></td>
-    </td>
     <td><b>Value 9</b> is greater than <b>Value 10</b></td>
     <td id="3result1"></td>
   </tr>
@@ -179,40 +174,78 @@
 
 <table> <!-- SWITCH -->
   <tr>
-    <th>Statement</th>
-    <th>Condition</th>
-    <th></th>
+    <th>Switch</th>
+    <th>Choose a number upt to 4</th>
     <th>Result</th>
   </tr>
   <tr>
-    <td>if</td>
-    <td><input type="number" id="3val1" min="0" max="10" placeholder="Value 9"> >
-      <input type="number" id="3val2" min="0" max="10" placeholder="Value 10"></td>
-    </td>
-    <td><b>Value 9</b> is greater than <b>Value 10</b></td>
-    <td id="3result1"></td>
-  </tr>
-  <tr>
-    <td>else</td>
-    <td></td>
-    <td><b>Value 9</b> is NOT greater than <b>Value 10</b></td>
-    <td id="3result2"></td>
+    <td>case</td>
+    <td><input type="number" id="4val1" min="0" max="10" placeholder="Value A"></td>
+    <td id="4result1"></td>
   </tr>
 </table>
-<button type="button" onclick="statements3()">Test if-else</b></button>
+<button type="button" onclick="statements4()">Test Switch</b></button>
 </br></br>
 
 <h2>FUNCTIONS</h2>
+<p>A <b>Function</b> is a block of code created to execute a task. The function will be executed when something calls it.</p>
+
+<table>
+  <tr>
+    <td>function</td>
+    <td>Keyword used to define the following code, inside curly brackets, as a function.</td>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td>Identification to the block of code to be called as a function. Each function must have a different name.</td>
+  </tr>
+  <tr>
+    <td>Parameters</td>
+    <td>Variables declared while creating the function. It is the place to insert values to be used by the function. Placed between parentheses ( ... ).</td>
+  </tr>
+  <tr>
+    <td>Arguments</td>
+    <td>Values inside the function to be used by the code.</td>
+  </tr>
+  <tr>
+    <td>Return</td>
+    <td>Statement used inside the function to output a final value to the function's caller. It also stop the execution of the block of code.</td>
+  </tr>
+</table>
+
+<p>The variables declared inside a function stay inside the function, they have no effect outside that function, they are <b>Local Variables</b>.</p>
+
 <h2>VARIABLES</h2>
-<h2>PARAMETERS</h2>
+<p>Variables are containers for storing data values.</p>
+<p>The declaration of a variable is possible using three different statements:</p>
+<table>
+  <tr>
+    <td>var</td>
+    <td>Create a <b>Global variable</b> possible to be changed/reassigned in the future.</td>
+  </tr>  
+  <tr>
+    <td>let</td>
+    <td>Create a <b>Local variable</b> possible to be changed/reassigned in the future.</td>
+  </tr>
+  <tr>
+    <td>const</td>
+    <td>Create a <b>Local variable</b>; its assigned value is <b>constant</b> being not allowed to be changed/reassigned in the future.</td>
+  </tr>
+</table>
+
 <h2>ARRAYS</h2>
-<h2>ASSOCIATIVE ARRAYS</h2>
+<p>An array is a special object that can hold many values. These values can be of the same type or different types.</p>
+<p>When using the <b>typeof</b> operator in an array, it will return "<b>object</b>" as the result and not "array".</p>
+<p>To access one element of an array, it is used the index of the element inside that array. The index is the place where it stays.<br>The indexes start in zero.<br>myarray[2] will access the third element inside the array called "myarray".</p>
 
+<h3>Array</h3>
+<p>An <b>Array</b> should be used when the element names (indexes) are required to be numbers.</p>
+<p class="color">fruits = ["Banana", "Orange", "Apple", "Strawberry"]</p>
 
-
-
-
-
+<h3>Associative Array</h3>
+<p>In JavaScript, Associative Arrays are called Objects.</p>
+<p>An <b>Object</b> should be used when the element names (indexes) are required to be strings.</p>
+<p class="color">person = { "name":"John", "Surname":"Doe", "age":40, "alive":TRUE }</p>
 
 </body>
 

@@ -38,7 +38,7 @@ function doWhileLoop() {
   var output = "";
   var contagem = start;
 
-   do {
+  do {
     output = output + contagem + "</br>";
     contagem += steps;
   } while (contagem <= ending)
@@ -47,7 +47,7 @@ function doWhileLoop() {
 }
 
 // IF / ELSE IF / ELSE ----------------------------------
-function statements1() {  // IF-IF
+function statements1() { // IF-IF
   var value1 = parseInt(document.getElementById('1val1').value);
   var value2 = parseInt(document.getElementById('1val2').value);
   var value3 = parseInt(document.getElementById('1val3').value);
@@ -66,7 +66,7 @@ function statements1() {  // IF-IF
   document.getElementById("1result2").innerHTML = result2;
 }
 
-function statements2() {  // IF-ELSE IF
+function statements2() { // IF-ELSE IF
   var value1 = parseInt(document.getElementById('2val1').value);
   var value2 = parseInt(document.getElementById('2val2').value);
   var value3 = parseInt(document.getElementById('2val3').value);
@@ -76,8 +76,7 @@ function statements2() {  // IF-ELSE IF
 
   if (value1 > value2) {
     result1 = "TRUE";
-  }
-  else if (value3 > value4) {
+  } else if (value3 > value4) {
     result2 = "TRUE";
   }
 
@@ -85,7 +84,7 @@ function statements2() {  // IF-ELSE IF
   document.getElementById("2result2").innerHTML = result2;
 }
 
-function statements3() {  // IF-ELSE
+function statements3() { // IF-ELSE
   var value1 = parseInt(document.getElementById('3val1').value);
   var value2 = parseInt(document.getElementById('3val2').value);
   var result1 = "FALSE";
@@ -93,11 +92,32 @@ function statements3() {  // IF-ELSE
 
   if (value1 > value2) {
     result1 = "TRUE";
-  }
-  else {
+  } else {
     result2 = "TRUE";
   }
 
   document.getElementById("3result1").innerHTML = result1;
   document.getElementById("3result2").innerHTML = result2;
+}
+
+// SWITCH -----------------------------------------------
+function statements4() { // SWITCH
+  var value = parseInt(document.getElementById('4val1').value);
+  var result = "Out of range";
+
+  switch (value) {
+    case 1:
+      result = "One";
+      break;
+    case 2:
+      result = "Two";
+      break;
+    case 3:
+      result = "Three";
+      break;
+    case 4:
+      result = "Four";
+  }
+
+  document.getElementById("4result1").innerHTML = result;
 }
