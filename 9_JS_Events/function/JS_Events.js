@@ -1,11 +1,12 @@
-let x1 = document.getElementById("animation1");
-let x2 = document.getElementById("animation2");
-let x3 = document.getElementById("animation3");
+/* ANIMATIONS EVENTS ----------------------------*/
+var x = document.getElementById("animation3");
+/*var x2 = document.getElementById("animation2");
+var x3 = document.getElementById("animation3");*/
 
-x1.addEventListener("webkitAnimationStart", funStart);
-x2.addEventListener("webkitAnimationEnd", funEnd);
-x3.addEventListener("webkitAnimationIteration", funRepeat);
-
+/*x.addEventListener("webkitAnimationStart", funStart);
+x.addEventListener("webkitAnimationEnd", funEnd);*/
+x.addEventListener("webkitAnimationIteration", funRepeat);
+/*
 function funStart() {
   alert("The animation has just started.");
 }
@@ -13,7 +14,7 @@ function funStart() {
 function funEnd() {
   alert("The animation has just finished.");
 }
-
+*/
 function funRepeat() {
   alert("The animation is repeating.");
 }

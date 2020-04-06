@@ -4,7 +4,7 @@
   height: 20px;
   background-color: red;
   position: relative;
-  animation: move 3s linear paused;
+  animation: move 3s linear;
 }
 
 @keyframes move {
