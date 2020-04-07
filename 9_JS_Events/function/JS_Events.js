@@ -1,22 +1,24 @@
 /* ANIMATIONS EVENTS ----------------------------*/
-var x = document.getElementById("animation3");
-/*var x2 = document.getElementById("animation2");
-var x3 = document.getElementById("animation3");*/
+var x1 = document.getElementById("animation1");
+var x2 = document.getElementById("animation2");
+var x3 = document.getElementById("animation3");
+var count = 0;
 
-/*x.addEventListener("webkitAnimationStart", funStart);
-x.addEventListener("webkitAnimationEnd", funEnd);*/
-x.addEventListener("webkitAnimationIteration", funRepeat);
-/*
+x1.addEventListener("webkitAnimationStart", funStart);
+x2.addEventListener("webkitAnimationEnd", funEnd);
+x3.addEventListener("webkitAnimationIteration", funRepeat);
+
 function funStart() {
-  alert("The animation has just started.");
+  document.getElementById("out1").innerHTML = "start";
 }
 
 function funEnd() {
-  alert("The animation has just finished.");
+  document.getElementById("out2").innerHTML = "finish";
 }
-*/
+
 function funRepeat() {
-  alert("The animation is repeating.");
+  count = count + 1;
+  document.getElementById("out3").innerHTML = "repeat " + count;
 }
 
 

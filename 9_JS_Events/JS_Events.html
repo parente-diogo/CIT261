@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="../main/styles/normalize.css">
   <link rel="stylesheet" href="../main/styles/main.css">
   <link rel="stylesheet" href="styles/style.css">
-  <script src="function/JS_Events.js"></script>
 </head>
 
 <body>
@@ -85,6 +84,7 @@
       <th>Attribute</th>
       <th>Description</th>
       <th>Action</th>
+      <th>Event Message</th>
       <th>Example</th>
     </tr>
     <tr>
@@ -93,6 +93,7 @@
       <td>
         <button type="button" onclick="document.getElementById('animation1').style.animationPlayState = 'running'">Start/Resume</button>
         <button type="button" onclick="document.getElementById('animation1').style.animationPlayState = 'paused'">Pause</button></td>
+      <td><div id="out1"></div></td>
       <td><div id="animation1"></div></td>
     </tr>
     <tr>
@@ -101,6 +102,7 @@
       <td>
         <button type="button" onclick="document.getElementById('animation2').style.animationPlayState = 'running'">Start/Resume</button>
         <button type="button" onclick="document.getElementById('animation2').style.animationPlayState = 'paused'">Pause</button></td>
+      <td><div id="out2"></div></td>
       <td><div id="animation2"></div></td>
     </tr>
     <tr>
@@ -109,6 +111,7 @@
       <td>
         <button type="button" onclick="document.getElementById('animation3').style.animationPlayState = 'running'">Start/Resume</button>
         <button type="button" onclick="document.getElementById('animation3').style.animationPlayState = 'paused'">Pause</button></td>
+      <td><div id="out3"></div></td>
       <td><div id="animation3"></div></td>
     </tr>
   </table>
@@ -426,6 +429,8 @@
     </tr>
   </table>
 
+  
+  <script src="function/JS_Events.js"></script>
 </body>
 
 </html>
