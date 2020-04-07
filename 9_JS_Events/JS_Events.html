@@ -32,49 +32,33 @@
   <h1>JavaScript Events</h1>
   <p>An event is a <b>"thing"</b> that happens to a HTML element and trigger another action. JavaScript functions can <b>"react"</b> to these triggers and perform something.</br>Event is a way of interaction between JavaScript and HTML codes.</p>
 
-
-  <h3>onTouchStart</h3>
-
-  <h3>onTouchEnd</h3>
-
-  <h3>onTouchMove</h3>
-
-  <h3>onTouchCancel</h3>
-
-  <h3>AnimationStart</h3>
-
-  <h3>animationEnd</h3>
-
-  <h3>animationIteration</h3>
-
-  <h3>transitionEnd</h3>
-
-
   <h2>Touch Events</h2>
-  <button type="button" ontouchstart="funOnTouchStart()">On Touch Start</button>
-  <button type="button" ontouchend="funOnEnd()">On Touch End</button>
-  <button type="button" ontouchcancel="funOnCancel()">On Touch Cancel</button>
-
   <table>
     <tr>
       <th>Attribute</th>
       <th>Description</th>
-    </tr>
-    <tr>
-      <td>ontouchcancel</td>
-      <td>The event occurs when the touch is interrupted.</td>
-    </tr>
-    <tr>
-      <td>ontouchend</td>
-      <td>The event occurs when a finger is removed from a touch screen.</td>
-    </tr>
-    <tr>
-      <td>ontouchmove</td>
-      <td>The event occurs when a finger is dragged across the screen.</td>
+      <th>Action</th>
     </tr>
     <tr>
       <td>ontouchstart</td>
       <td>The event occurs when a finger is placed on a touch screen.</td>
+      <td><button type="button" ontouchstart="funOnTouchStart()">On Touch Start</button></td>
+    </tr>
+    <tr>
+      <td>ontouchend</td>
+      <td>The event occurs when a finger is removed from a touch screen.</td>
+      <td><button type="button" ontouchend="funOnEnd()">On Touch End</button></td>
+    </tr>
+    <tr>
+      <td>ontouchcancel</td>
+      <td>The event occurs when the touch is interrupted.</td>
+      <td><button type="button" ontouchcancel="funOnCancel()">On Touch Cancel</button></td>
+    </tr>
+    <tr>
+      <td>ontouchmove</td>
+      <td>The event occurs when a finger is dragged across the screen.</td>
+      <td><p ontouchmove="moving(event)">Touch here and move</p></td>
+      <td><div id="position"></div></td>
     </tr>
   </table>
 
@@ -89,7 +73,7 @@
     </tr>
     <tr>
       <td>animationstart</td>
-      <td>The event occurs when a CSS animation is completed.</td>
+      <td>The event occurs when a CSS animation is complete.</td>
       <td>
         <button type="button" onclick="document.getElementById('animation1').style.animationPlayState = 'running'">Start/Resume</button>
         <button type="button" onclick="document.getElementById('animation1').style.animationPlayState = 'paused'">Pause</button></td>
@@ -121,10 +105,14 @@
     <tr>
       <th>Attribute</th>
       <th>Description</th>
+      <th>Event Message</th>
+      <th>Example</th>
     </tr>
     <tr>
       <td>transitionend</td>
-      <td>The event occurs when a CSS transition has completed.</td>
+      <td>The event occurs when a CSS transition is complete.</td>
+      <td><div id="out4"></div></td>
+      <td><div id="transition1"></div></td>
     </tr>
   </table>
 
@@ -137,9 +125,8 @@
       <td>Triggers an action when the user clicks a button using the mouse.</td>
       <td><button type="button" onclick="funOnClick()">On Click</button></td>
     </tr>
-
   </table>
-</br></br>
+</br>
 
   <table>
     <tr>

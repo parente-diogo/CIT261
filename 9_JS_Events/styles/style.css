@@ -14,8 +14,25 @@
   95% {left: 0px;}
 }
 
+#animation1 {
+  animation-delay: 0.2s;
+}
+
 #animation3 {  
   animation-iteration-count: infinite;
+}
+
+/* TRANSITION EVENTS ----------------------------*/
+#transition1 {  
+  width: 100px;
+  height: 20px;
+  background: green;
+  transition: 2s width;
+  transition-timing-function: linear;
+}
+
+#transition1:hover {
+  width: 400px;
 }
 
 /* ----------------------------------------------*/
